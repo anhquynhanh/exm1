@@ -1,0 +1,257 @@
+@import url(/proxima/proxima);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'proxima', sans-serif;
+	font-size: 14px;
+}
+h3 {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 29.66px;
+	color: white;
+}
+h4 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21.92px;
+	color: white;
+}
+.h4--black {
+	color: black;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21.92px;
+}
+.p--black {
+	font-weight: 300;
+	line-height: 17.05px;
+	color: black;
+	font-size: 14px;
+}
+.p--white {
+	font-weight: 300;
+	line-height: 17.05px;
+	color: white;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.btn--default-1 {
+    border: 0.5px double #231F20;
+    outline: 2px solid #BCBEC0;
+	color: #231F20;
+    outline-offset: 3px;
+	border-radius: 100px;
+	padding: 15.5px 47px;
+}
+.btn--default-1:hover {
+	background-image: url('../images/collection/group_2/background_btn.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	border: 0.5px double white;
+	background-color: black;
+	color: white;
+}
+.btn--default-2 {
+	background-color: #231F20;
+    border: 0.5px double white;
+    outline: 2px solid #BCBEC0;
+	color: white;
+    outline-offset: 3px;
+	border-radius: 24px;
+	padding: 15.5px 47px;
+	cursor: pointer;
+}
+.btn--default-2:hover {
+	background-image: url('../images/footer/background_btn.png');
+	background-color: white;
+	border: 0.5px double #231F20;
+	color: #231F20;
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+.highline {
+	width: 100%;
+	height: 1px;
+	border: 1px solid #696969;
+}
+
+header ul, header ul > *, .main__collection,
+.main__collection ul, .main__collection ul > *,
+.new__item, .new__item div, .collection--hot-sale div,
+.collection--hot-sale div li, .hot-sale--title, footer, footer > *,
+.footer--title, form, .form--sign-up, .footer__links,
+.footer__links>ul, .footer__links li, .links__group, .footer--title>ul,
+.product--list, .pro--info, .pro--info div {
+	display: flex;
+}
+.collection--new, .collection--hot-sale {
+	margin-left: auto;
+}
+header ul, .main__collection, .hot-sale--title,
+.main__collection ul > *, .footer--title ul {
+	justify-content: space-between;
+}
+.main__collection, .main__collection ul,
+.collection--hot-sale, .footer--title, .hot-sale--content {
+	gap: 40px;
+}
+.header__links, form, .footer__links {
+	gap: 30px;
+}
+.collection--new, .new__item, .pro--info div, .product--list {
+	gap: 10px;
+}
+form, .hot-sale--title {
+	padding: 0 40px 0 0;
+}
+
+/* Header */
+
+header ul {
+	padding: 0 30px;
+	width: 100%;
+	position: absolute;
+	top: 40px;
+}
+.header--img {
+	width: 100%;
+}
+.header__logos {
+	gap: 46px;
+}
+.header--scroll {
+	position: absolute;
+	top: 107%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Main */
+
+main {
+	margin-bottom: 60px;
+}
+.main__collection ul {
+	width: 100%;
+	flex-direction: column;
+}
+.collection--example {
+	width: 100%;
+	gap: 5px;
+}
+.collection--new {
+	position: relative;
+}
+.new__item>div {
+	border-radius: 10px;
+	flex-direction: column;
+	position: absolute;
+	padding: 15px;
+	bottom: 0;
+	gap: 5px;
+}
+.new--line_down {
+	width: 43px;
+	border-bottom: 1px solid white;
+	margin-top: 2px;
+}
+.hot-sale--title div {
+	margin: auto 0;
+	gap: 20px;
+}
+.collection--hot-sale>div {
+	flex-direction: column;
+}
+.hot-sale--title img {
+	margin: auto;
+	width: 38px;
+	height: 8px;
+}
+.pro--info {
+	flex-direction: column;
+	gap: 15px;
+}
+.pro--info div {
+	flex-direction: column;
+}
+
+/* Footer */
+
+footer {
+	background-color: #231F20;
+	background-image: url('../images/footer/background_img.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	flex-direction: column;
+	gap: 50px;
+	justify-content: center;
+}
+.footer--title {
+	padding: 0 40px;
+	flex-direction: column;
+}
+form {
+	margin-top: 80px;
+	flex-direction: column;
+	text-align: center;
+}
+form input {
+	border-radius: 24px;
+	border: 1px solid #BCBEC0;
+	padding: 11px 20px;
+	background-image: url('../images/footer/email.png');
+	background-position-x: 90%;
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+}
+.form--sign-up {
+	justify-content: center;
+	gap: 20px;
+}
+.footer__links {
+	flex-direction: column;
+	align-items: center;
+}
+.footer__links ul {
+	flex-direction: row;
+	gap: 60px;
+}
+.footer__links li {
+	max-width: fit-content;
+	flex-direction: column;
+	gap: 5px;
+}
+.links__underline {
+	width: 100%;
+	border-bottom: 0.5px solid white;
+}
+.links__group {
+	width: 100%;
+	flex-direction: row;
+	gap: 20px;
+}
+.links__group img {
+	width: auto;
+}
+.links__group div {
+	margin: auto 0;
+}
+.footer--title>ul {
+	gap: 20px;
+}
+.footer--title>ul li {
+	margin: auto 0;
+	color: white;
+}
+footer > * {
+	margin: auto 0;
+}
