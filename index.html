@@ -121,18 +121,32 @@
         </header>
         <main>
             <section class="banner">
-                <img src="./assets/images/banner/banner.png" alt="">
-                <ul>
-                    <li>
-                        <img src="./assets/images/banner/1.png" alt="">
-                    </li>
-                    <li>
-                        <img src="./assets/images/banner/2.png" alt="">
-                    </li>
-                    <li>
-                        <img src="./assets/images/banner/3.png" alt="">
-                    </li>
-                </ul>
+                <div class="slider">
+                    <ul class="slider__list">
+                        <li class="list__item">
+                            <img src="./assets/images/banner/banner.png" alt="">
+                        </li>
+                        <li class="list__item">
+                            <img src="./assets/images/banner/1.png" alt="">
+                        </li>
+                        <li class="list__item">
+                            <img src="./assets/images/banner/2.png" alt="">
+                        </li>
+                        <li class="list__item">
+                            <img src="./assets/images/banner/3.png" alt="">
+                        </li>
+                    </ul>
+                    <div class="slider__buttons">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+                    <ul class="slider__dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </section>
             <ul class="collection">
                 <li class="collection__item">
@@ -181,12 +195,36 @@
                             <a href="">Áo sơ mi nam dài tay Aristino ALS01103</a>
                             <p>1.999.999đ</p>
                         </div>
+                        <div class="item__selection">
+                            <div class="item__size">
+                                <label for="size">Chọn size</label>
+                                <select name="size" id="size">
+                                    <option value="">1</option>
+                                    option
+                                </select>
+                            </div>
+                            <button class="button-1" type="">
+                                <span>Thêm vào giỏ hàng</span>
+                            </button>
+                        </div>
                     </li>
                     <li class="hot__item">
                         <img src="./assets/images/collection/group_2/2.png" alt="">
                         <div class="item__info">
                             <a href="">Áo sơ mi nam dài tay Aristino ALS01103</a>
                             <p>1.999.999đ</p>
+                        </div>
+                        <div class="item__selection">
+                            <div class="item__size">
+                                <label for="size">Chọn size</label>
+                                <select name="size" id="size">
+                                    <option value="">1</option>
+                                    option
+                                </select>
+                            </div>
+                            <button class="button-1" type="">
+                                <span>Thêm vào giỏ hàng</span>
+                            </button>
                         </div>
                     </li>
                     <li class="hot__item">
@@ -195,12 +233,36 @@
                             <a href="">Áo sơ mi nam dài tay Aristino ALS01103</a>
                             <p>1.999.999đ</p>
                         </div>
+                        <div class="item__selection">
+                            <div class="item__size">
+                                <label for="size">Chọn size</label>
+                                <select name="size" id="size">
+                                    <option value="">1</option>
+                                    option
+                                </select>
+                            </div>
+                            <button class="button-1" type="">
+                                <span>Thêm vào giỏ hàng</span>
+                            </button>
+                        </div>
                     </li>
                     <li class="hot__item">
                         <img src="./assets/images/collection/group_2/4.png" alt="">
                         <div class="item__info">
                             <a href="">Áo sơ mi nam dài tay Aristino ALS01103</a>
                             <p>1.999.999đ</p>
+                        </div>
+                        <div class="item__selection">
+                            <div class="item__size">
+                                <label for="size">Chọn size</label>
+                                <select name="size" id="size">
+                                    <option value="">1</option>
+                                    option
+                                </select>
+                            </div>
+                            <button class="button-1" type="">
+                                <span>Thêm vào giỏ hàng</span>
+                            </button>
                         </div>
                     </li>
                 </ul>
@@ -260,4 +322,5 @@
             <img src="./assets/images/footer/bottom_img.svg" alt="">
         </footer>
     </body>
+    <script src="./main.js"></script>
 </html>
