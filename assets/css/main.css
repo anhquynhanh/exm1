@@ -73,7 +73,7 @@ a {
 .button-1:hover {
     background-image: url('../images/collection/group_1/background_btn.svg');
     background-color: black;
-	background-position: right top;
+	background-position: right center;
 	background-repeat: no-repeat;
     color: white;
 }
@@ -104,7 +104,7 @@ a {
 .button-2:hover {
     background-image: url('../images/footer/background_btn.png');
     background-color: white;
-	background-position: right top;
+	background-position: right center;
 	background-repeat: no-repeat;
 }
 
