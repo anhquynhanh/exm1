@@ -1,17 +1,16 @@
 @font-face {
-    font-family: 'ProximaNova';
-    src: url('/proxima/proxima');
+    font-family: 'proxima';
+    src: url(/proxima/Mark\ Simonson\ -\ Proxima\ Nova\ Black.otf);
 }
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-    font-family: 'ProximaNova', sans-serif;
 }
 
 body {
-	font-family: fontBasic;
+	font-family: 'proxima';
 	color: black;
 	line-height: 17.05px;
 	font-weight: 300;
@@ -80,7 +79,7 @@ a {
 }
 
 .button-1:hover span {
-    border: 1px solid white;
+    border: 0.5px solid white;
 }
 
 .button-2 {
@@ -110,12 +109,8 @@ a {
 }
 
 .button-2:hover span {
-    border: 1px solid #231F20;
+    border: 0.5px solid #231F20;
     color: #231F20;
-}
-
-span {
-    line-height: 16.41px;
 }
 
 header {
@@ -153,81 +148,14 @@ main {
     gap: 5px;
 }
 
-.slider {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.slider__list {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    transition: 1s;
-}
-
-.list__item {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #C4C4C4;
-}
-
-.list__item img {
-    height: 100%;
-}
-
-.slider__buttons {
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    width: 90%;
+.banner > ul {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
 }
 
-.slider__buttons button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff5;
-    border-radius: none;
-    font-weight: bold;
-}
-
-.slider__dots {
-    position: absolute;
-    bottom: 10px;
-    color: #fff;
-    left: 0;
+.banner > ul img {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.slider__dots li {
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 20px;
-    transition: 1s;
-}
-
-.slider__dots li.active {
-    width: 80px;
 }
 
 .collection {
@@ -290,11 +218,10 @@ main {
 .hot__item {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
     position: relative;
     gap: 15px;
 }
-    
+
 .hot__item:hover .item__selection {
     visibility: visible;
 }
