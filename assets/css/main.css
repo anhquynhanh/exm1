@@ -159,14 +159,15 @@ main {
 }
 
 .collection {
+    width: 100%;
     display: flex;
     overflow-x: auto;
+    margin-left: auto;
     gap: 10px;
 }
 
 .collection__item {
     position: relative;
-    margin-left: auto;
 }
 
 .item__title {
