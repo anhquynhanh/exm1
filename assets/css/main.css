@@ -193,7 +193,6 @@ main {
 .collection {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     overflow: scroll;
     gap: 10px;
 }
@@ -248,7 +247,6 @@ main {
 
 .hot__list-items {
     display: flex;
-    justify-content: space-between;
     overflow: scroll;
     gap: 10px;
 }
