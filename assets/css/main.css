@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'proxima';
-    src: url(/proxima/Mark\ Simonson\ -\ Proxima\ Nova\ Black.otf);
+    src: url(/proxima/ProximaNova-Black.woff);
 }
 
 * {
@@ -79,7 +79,7 @@ a {
 }
 
 .button-1:hover span {
-    border: 0.5px solid white;
+    box-shadow: 0 0 0 0.5px white;
 }
 
 .button-2 {
@@ -109,7 +109,7 @@ a {
 }
 
 .button-2:hover span {
-    border: 0.5px solid #231F20;
+    box-shadow: 0 0 0 0.5px #231F20;
     color: #231F20;
 }
 
@@ -148,6 +148,38 @@ main {
     gap: 5px;
 }
 
+.slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.slider__dots {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider__dots li {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.slider__dots li.active {
+    width: 100px;
+}
+
 .banner > ul {
     display: flex;
     justify-content: space-between;
@@ -161,9 +193,13 @@ main {
 .collection {
     width: 100%;
     display: flex;
-    overflow-x: auto;
-    margin-left: auto;
+    justify-content: space-between;
+    overflow: scroll;
     gap: 10px;
+}
+
+.collection:: -webkit-scrollbar {
+    width: 0;
 }
 
 .collection__item {
@@ -213,8 +249,12 @@ main {
 .hot__list-items {
     display: flex;
     justify-content: space-between;
-    overflow-x: auto;
+    overflow: scroll;
     gap: 10px;
+}
+  
+.hot__list-items:: -webkit-scrollbar {
+    width: 0;
 }
 
 .hot__item {
@@ -234,7 +274,7 @@ main {
     flex-direction: row;
     background-color: white;
     position: absolute;
-    bottom: 40px;
+    bottom: 55px;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
