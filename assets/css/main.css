@@ -429,18 +429,9 @@ footer>img {
         gap: 20px;
     }
 
-    .slider {
-        height: 932px;
-    }
-
-    .slider img {
+    .swiper-slide img {
         content: url('../images/banner/banner_mobile.svg');
         width: 100%;
         height: auto;
-    }
-
-    .slider__dots li {
-        width: 5px;
-        height: 5px;
     }
 }
