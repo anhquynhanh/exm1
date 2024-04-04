@@ -194,12 +194,12 @@ main {
     gap: 20px;
 }
 
-.swiper-pagination-bullet {
+.pagination__dots {
     background-color: white;
     opacity: 1;
 }
 
-.swiper-pagination-bullet-active {
+.pagination__dots {
     background: white;
     border-radius: 50px;
     width: 100px;
@@ -402,25 +402,31 @@ form input {
     width: 100%;
     gap: 30px;
 }
-.footer__links ul {
+
+.footer__links__desktop {
     display: flex;
     gap: 60px;
 }
 
-.footer__links li {
+.footer__links__desktop li {
     display: flex;
     max-width: fit-content;
 	flex-direction: column;
+    background-color: #231F20;
 	gap: 5px;
 }
 
-.footer__links li a {
+.footer__links__desktop li a {
     color: white;
 }
 
 .links__underline {
 	width: 100%;
 	border-bottom: 0.5px solid white;
+}
+
+.footer__links__mobile {
+    display: none !important;
 }
 
 .footer__icon {
@@ -534,8 +540,29 @@ footer>img {
         padding: 0 40px;
     }
 
-    .footer__links ul li {
+    .footer__links__desktop {
+        display: none;
+    }
+
+    .footer__links__mobile {
+        display: flex !important;
+    }
+
+    .footer__links__mobile ul {
+        display: flex;
+        gap: 40px;
+    }
+
+    .footer__links__mobile ul li {
+        display: flex;
+        max-width: fit-content;
+        flex-direction: column;
         background-color: #231F20;
+        gap: 5px;
+    }
+
+    .footer__links__mobile ul li a {
+        color: white;
     }
 
     .footer__source {

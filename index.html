@@ -276,7 +276,37 @@
                 </div>
             </form>
             <div class="footer__bottom">
-                <div class="footer__links swiper mySwiper3">
+                <ul class="footer__links__desktop">
+                    <li>
+                        <a href="">Thương hiệu</a>
+                        <div class="links__underline"></div>
+                    </li>
+                    <li> 
+                        <a href="">Sản phẩm</a>
+                        <div class="links__underline"></div>
+                    </li>
+                    <li>
+                        <a href="">Bộ sưu tập</a>
+                        <div class="links__underline"></div>
+                    </li>
+                    <li> 
+                        <a href="">Thương hiệu</a>
+                        <div class="links__underline"></div>
+                    </li>
+                    <li>
+                        <a href="">Cửa hàng</a>
+                        <div class="links__underline"></div>
+                    </li>
+                    <li>
+                        <a href="">3D Shopping</a>
+                        <div class="links__underline"></div>
+                    </li>
+                    <li>
+                        <a href="">Thêm</a>
+                        <div class="links__underline"></div>
+                    </li>
+                </ul>
+                <div class="footer__links__mobile swiper mySwiper3">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
                             <a href="">Thương hiệu</a>
@@ -357,5 +387,9 @@
         });
 
         var swiper = new Swiper(".mySwiper3", {});
+    </script>
+    <script>
+        const swiperPag = document.querySelector('.swiper-pagination-bullet');
+        swiperPag.classList.add('pagination__dots', 'before');
     </script>
 </html>
