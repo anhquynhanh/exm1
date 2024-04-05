@@ -454,7 +454,6 @@ form input {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 40px;
     gap: 20px;
 }
 
@@ -499,7 +498,7 @@ footer>img {
         height: auto;
     }
 
-    .banner__desktop {
+    .banner .banner__desktop {
         display: none;
     }
 
