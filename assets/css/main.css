@@ -308,18 +308,13 @@ main {
     gap: 20px;
 }
 
-.hot__list-items {
+.hot__list-items ul {
     display: flex;
-    overflow: scroll;
     padding: 0 40px;
     gap: 10px;
 }
 
-.hot__list-items::-webkit-scrollbar {
-    width: 0;
-}
-
-.hot__item {
+.hot__list-items ul .hot__item {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -369,11 +364,13 @@ main {
     border-radius: 100px;
 }
 
-.hot__list__items .item__info {
+.hot__list-items ul .hot__item .item__info {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    font-size: 11px;
-    line-height: 13.4px;
+    font-size: 14px;
+    line-height: 17.05px;
+    align-items: flex-start;
     gap: 10px;
 }
 
