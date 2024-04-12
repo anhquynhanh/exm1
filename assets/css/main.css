@@ -696,6 +696,7 @@ footer>img {
     form {
         border-bottom: unset;
         padding-bottom: 0;
+        gap: 40px;
     }
 
     .footer__bottom {
