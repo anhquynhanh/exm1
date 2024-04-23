@@ -205,6 +205,17 @@ header .header__desktop {
     gap: 30px;
 }
 
+.header__links .links__icon {
+    display: flex;
+    gap: 30px;
+}
+
+.links__header__basket {
+    display: flex;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
 .header__mobile {
     display: none;
 }

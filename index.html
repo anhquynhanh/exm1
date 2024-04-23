@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
-    <body>
+    <body  class="opacity__background">
         <header id="header">
             <section class="header__desktop">
                 <div class="header__logos">
@@ -25,20 +25,28 @@
                     </form>
                 </div>
                 <div class="header__links">
-                    <a class="links__search">
-                        <img src="./assets/images/header/search.svg" alt="">
-                    </a>
                     <a class="links__close" href="" title="">
                         <img src="./assets/images/pop-up/close.svg" alt="">
                     </a>
+                    <div class="links__icon">
+                        <a class="links__search">
+                            <img src="./assets/images/header/search.svg" alt="">
+                        </a>
+                        <a>
+                            <img src="./assets/images/header/account.svg" alt="">
+                        </a>
+                        <a>
+                            <img src="./assets/images/header/like.svg" alt="">
+                        </a>
+                        <a class="links__cart">
+                            <img src="./assets/images/header/cart.svg" alt="">
+                        </a>
+                    </div>
                     <a>
-                        <img src="./assets/images/header/account.svg" alt="">
-                    </a>
-                    <a>
-                        <img src="./assets/images/header/like.svg" alt="">
-                    </a>
-                    <a>
-                        <img src="./assets/images/header/cart.svg" alt="">
+                        <div class="links__header__basket">
+                            <img src="./assets/images/basket/logo_basket.svg" alt="">
+                            <h4>giỏ hàng của bạn</h4>
+                        </div>
                     </a>
                 </div>
                 <div class="header__pop-up">
@@ -236,7 +244,6 @@
                     </ul>
                 </div>
             </section>
-            <div class="opacity__background"></div>
         </header>
         <main>
             <section class="banner">
@@ -607,10 +614,6 @@
 
         menuToggle.addEventListener('click', () => {
             menuOpen.style.display = 'flex';
-            backgroundOp.classList.remove('hidden');
-            backgroundOp.style.cssText = `
-                z-index: 900;
-            `;
         });
 
         menuLi.addEventListener('click', () => {
@@ -636,9 +639,12 @@
         const mainPop = document.querySelector('.pop__main');
         const btnMainPop = document.querySelector('.pop__main button');
         const inputPop = document.querySelector('.pop__header input');
+        const basketHeader = document.querySelector('.links__header__basket');
+        const cartIcon = document.querySelector('.links__cart');
+        const linksIcon = document.querySelector('.links__icon');
         const imgUrl = [
-            '',
             './assets/images/pop-up/close.svg',
+            '',
             './assets/images/pop-up/account.svg',
             './assets/images/pop-up/like.svg',
             './assets/images/pop-up/cart.svg'
@@ -649,9 +655,10 @@
             headerPopup.classList.add('hidden');
             closeIcon.classList.add('hidden');
             popHeader.classList.add('hidden');
-            backgroundOp.classList.add('hidden');
             btnMainPop.classList.add('hidden');
             categoryOpen.classList.add('hidden');
+            basketHeader.classList.add('hidden');
+            backgroundOp.classList.remove('opacity__background');
         });
 
         searchIcon.addEventListener('click', () => {
@@ -659,7 +666,11 @@
             closeIcon.classList.remove('hidden');
             popHeader.classList.remove('hidden');
             headerPopup.classList.remove('hidden');
+            backgroundOp.classList.add('opacity__background');
             logo.classList.add('hidden');
+            closeIcon.style.cssText = `
+                display: flex;
+            `;
             popHeader.style.cssText = `
                 grid-column: 1 / 5;
             `;
@@ -698,10 +709,6 @@
             imgLinks.forEach((img, index) => {
                 img.src = imgUrl[index];
             });
-            backgroundOp.classList.remove('hidden');
-            backgroundOp.style.cssText = `
-                z-index: 900;
-            `;
         });
 
         inputPop.addEventListener('click', () => {
@@ -709,6 +716,24 @@
             btnMainPop.classList.remove('hidden');
             headerPopup.style.cssText = `
                 padding-bottom: 30px;
+            `;
+        });
+
+        cartIcon.addEventListener('click', () => {
+            basketHeader.classList.remove('hidden');
+            closeIcon.classList.remove('hidden');
+            linksIcon.classList.add('hidden');
+            header.style.classList = `
+
+            `;
+            headerDesktop.style.cssText = `
+                padding: 0 0 0 30px;
+            `;
+            headerLinks.style.cssText = `
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                width: 430px;
+                background-color: white;
             `;
         });
     </script>
