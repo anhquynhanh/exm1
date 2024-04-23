@@ -142,29 +142,66 @@ a {
     color: #231F20;
 }
 
+.hidden {
+    display: none !important;
+}
+
+body {
+    position: relative;
+}
+
 header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 0 30px;
-    top: 40px;
+    padding: 40px 0 0;
     z-index: 999;
-    position: sticky;
+    position: fixed;
+    width: 100%;
 }
 
 header.hide {
     top: -100%;
 }
 
-header > * {
+header .header__desktop {
+    padding: 0 30px;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    z-index: 999;
 }
 
 .header__logos {
+    display: flex;
     gap: 46px;
 }
 
+.pop__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 0;
+    padding: auto 0;
+}
+
+.pop__header .header__form {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.header__form input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.header__form input::placeholder {
+    text-transform: uppercase;
+    width: 100%;
+}
+
 .header__links {
+    display: flex;
     gap: 30px;
 }
 
@@ -175,17 +212,18 @@ header > * {
 .header__open {
     height: 1024px;
     position: absolute;
-    top: -40px;
+    top: 0;
     left: 0;
+    z-index: 998;
 }
 
-.header__open .menu__open,
-.header__open .category__open {
+.header__open .menu__open {
     display: none;
 }
 
 .menu__open {
 	width: 430px;
+    height: 100vh;
 	background-color: white;
 	background-image: url('../images/menu-open/menu_background.svg');
 	background-position: right;
@@ -257,7 +295,8 @@ header > * {
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
-    overflow: hidden;
+    position: absolute;
+    right: 0;
 	gap: 30px;
 }
 
@@ -298,45 +337,16 @@ header > * {
 
 .header__pop-up {
     display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 45px;
     flex-direction: column;
     background-color: white;
+    border-top: 1px solid #EAEAEA;
     position: absolute;
-    top: -40px;
+    top: 100%;
     left: 0;
     gap: 20px;
-}
-
-.pop__header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: auto 0;
-	padding: auto 40px;
-	border-bottom: 1px solid #EAEAEA;
-}
-
-.pop__header form {
-	display: flex;
-	flex-direction: row;
-	padding: 11px 40px;
-	gap: 10px;
-}
-
-.pop__header input {
-	width: 270px;
-	border: none;
-	outline: none;
-}
-
-.pop__header input::placeholder {
-	text-transform: uppercase;
-}
-
-.pop__header ul {
-	padding: 11px 40px;
-	display: flex;
-	flex-direction: row;
-	gap: 30px;
 }
 
 .pop__result {
@@ -364,27 +374,69 @@ header > * {
 .pop__main {
 	display: flex;
 	flex-direction: column;
-    transform: translateY(-25px);
-    padding: 0 40px;
+    align-items: center;
     gap: 40px;
 }
 
 .main__title {
+    width: 100%;
 	display: flex;
 	flex-direction: row;
+    padding: 0 40px;
 	gap: 10px;
 }
 
-.pop__main ul {
-	display: flex;
-	flex-direction: row;
-	gap: 10px;
+.pop-main .swiper > div {
+    padding: 0 40px 46px 40px;
 }
 
-.pop__main ul li {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+.pop__main .main__pro {
+    display: flex;
+    gap: 10px;
+}
+
+.pop__main .main__pro .swiper-wrapper {
+    margin: 0 30px;
+}
+
+.pop__main .main__pro .swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pop__main .main__pro .swiper-wrapper .swiper-slide div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header__pop-up .pop__main .main__pro p {
+    text-align: left;
+    line-height: 17.05px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.pop__main button {
+    width: fit-content;
+}
+
+.opacity__background {
+    background-color: black;
+    opacity: 0.6;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 40px;
 }
 
 .banner {
@@ -659,7 +711,7 @@ footer form input {
     padding: 11px 20px;
 }
 
-.footer__bottom {
+footer .footer__bottom {
     display: flex;
     flex-direction: column;
     align-items: center;

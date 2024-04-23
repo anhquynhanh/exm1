@@ -9,29 +9,115 @@
     </head>
     <body>
         <header id="header">
-            <section class="header__logos">
-                <a id="ham_menu">
-                    <img src="./assets/images/header/ham_menu.svg" alt="">
-                </a>
-                <a>
-                    <img src="./assets/images/header/aristino_logo.svg" alt="">
-                </a>
+            <section class="header__desktop">
+                <div class="header__logos">
+                    <a id="ham_menu">
+                        <img src="./assets/images/header/ham_menu.svg" alt="">
+                    </a>
+                    <a>
+                        <img src="./assets/images/header/aristino_logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="pop__header">
+                    <form class="header__form">
+                        <img src="./assets/images/pop-up/search.svg" alt="">
+                        <input placeholder="tìm kiếm sản phẩm bạn mong muốn" type="" name="">
+                    </form>
+                </div>
+                <div class="header__links">
+                    <a class="links__search">
+                        <img src="./assets/images/header/search.svg" alt="">
+                    </a>
+                    <a class="links__close" href="" title="">
+                        <img src="./assets/images/pop-up/close.svg" alt="">
+                    </a>
+                    <a>
+                        <img src="./assets/images/header/account.svg" alt="">
+                    </a>
+                    <a>
+                        <img src="./assets/images/header/like.svg" alt="">
+                    </a>
+                    <a>
+                        <img src="./assets/images/header/cart.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__pop-up">
+                    <div class="pop__result">
+                        <a href="" title="">
+                            <span>áo sơ mi</span>
+                        </a>
+                        <a href="" title="">
+                            <span>áo polo</span>
+                        </a>
+                        <a href="" title="">
+                            <span>bộ sưu tập 2023</span>
+                        </a>
+                    </div>
+                    <div class="pop__main">
+                        <div class="main__title">
+                            <img src="./assets/images/pop-up/logo_title.svg" alt="">
+                            <h3>gợi ý cho bạn</h3>
+                        </div>
+                        <div class="main__pro swiper mySwiper5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/pop-up/pro1.svg" alt="">
+                                    <div>
+                                        <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
+                                        <p>1.999.999đ</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/pop-up/pro1.svg" alt="">
+                                    <div>
+                                        <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
+                                        <p>1.999.999đ</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/pop-up/pro1.svg" alt="">
+                                    <div>
+                                        <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
+                                        <p>1.999.999đ</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/pop-up/pro1.svg" alt="">
+                                    <div>
+                                        <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
+                                        <p>1.999.999đ</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/pop-up/pro1.svg" alt="">
+                                    <div>
+                                        <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
+                                        <p>1.999.999đ</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/pop-up/pro1.svg" alt="">
+                                    <div>
+                                        <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
+                                        <p>1.999.999đ</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/pop-up/pro1.svg" alt="">
+                                    <div>
+                                        <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
+                                        <p>1.999.999đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button-1">
+                            <span>Xem thêm kết quả</span>
+                        </button>
+                    </div>
+                </div>
             </section>
-            <div class="header__links">
-                <a>
-                    <img src="./assets/images/header/search.svg" alt="">
-                </a>
-                <a>
-                    <img src="./assets/images/header/account.svg" alt="">
-                </a>
-                <a>
-                    <img src="./assets/images/header/like.svg" alt="">
-                </a>
-                <a>
-                    <img src="./assets/images/header/cart.svg" alt="">
-                </a>
-            </div>
-            <div class="header__mobile">
+            <section class="header__mobile">
                 <ul>
                     <li>
                         <a href="">
@@ -59,7 +145,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </section>
             <section class="header__open">
                 <div class="menu__open">
                     <div class="menu__collection">
@@ -68,7 +154,7 @@
                         </a>
                         <h4>bộ sưu tập 2023<strong>mới</strong></h4>
                         <ul>
-                            <li>áo</li>
+                            <li class="clothes">áo</li>
                             <li>quần</li>
                             <li>đồ lót</li>
                             <li>đồ bộ</li>
@@ -150,102 +236,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="header__pop-up">
-                <div class="pop__header">
-                    <form>
-                        <a href="" title="">
-                            <img src="./assets/images/pop-up/search.svg" alt="">
-                        </a>
-                        <input placeholder="tìm kiếm sản phẩm bạn mong muốn" type="" name="">
-                    </form>
-                    <ul>
-                        <li>
-                            <a href="" title="">
-                                <img src="./assets/images/pop-up/close.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" title="">
-                                <img src="./assets/images/pop-up/account.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" title="">
-                                <img src="./assets/images/pop-up/like.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" title="">
-                                <img src="./assets/images/pop-up/cart.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="pop__result">
-                    <a href="" title="">
-                        <span>áo sơ mi</span>
-                    </a>
-                    <a href="" title="">
-                        <span>áo polo</span>
-                    </a>
-                    <a href="" title="">
-                        <span>bộ sưu tập 2023</span>
-                    </a>
-                </div>
-                <div class="pop__main">
-                    <div class="main__title">
-                        <img src="./assets/images/pop-up/logo_title.svg" alt="">
-                        <h3>gợi ý cho bạn</h3>
-                    </div>
-                    <ul>
-                        <li>
-                            <img src="./assets/images/pop-up/pro1.svg" alt="">
-                            <div>
-                                <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
-                                <p>1.999.999đ</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="../assets/images/pop-up/pro2.svg" alt="">
-                            <div>
-                                <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
-                                <p>1.999.999đ</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="./assets/images/pop-up/pro3.svg" alt="">
-                            <div>
-                                <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
-                                <p>1.999.999đ</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="./assets/images/pop-up/pro1.svg" alt="">
-                            <div>
-                                <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
-                                <p>1.999.999đ</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="./assets/images/pop-up/pro2.svg" alt="">
-                            <div>
-                                <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
-                                <p>1.999.999đ</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="./assets/images/pop-up/pro3.svg" alt="">
-                            <div>
-                                <p>Áo sơ mi nam dài tay Aristino ALS01103</p>
-                                <p>1.999.999đ</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <button class="button-1">
-                        <span>Xem thêm kết quả</span>
-                    </button>
-                </div>
-            </section>
+            <div class="opacity__background"></div>
         </header>
         <main>
             <section class="banner">
@@ -589,12 +580,20 @@
                 }
             }
         });
+
+        var swiper = new Swiper(".mySwiper5", {
+            slidesPerView: 6,
+            spaceBetween: 30,
+        });
     </script>
     <script>
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
+            const bgOp = document.querySelector('.opacity__background');
+
             if (window.scrollY > 800) {
                 header.classList.add('hide');
+                bgOp.classList.add('hidden');
             } else {
                 header.classList.remove('hide');
             }
@@ -603,15 +602,114 @@
     <script>
         const menuToggle = document.getElementById('ham_menu');
         const menuOpen = document.querySelector('.header__open .menu__open');
-        const menuLi = document.querySelectorAll('.menu__collection ul li');
-        const categoryOpen = document.querySelector('.header__open .category__open');
+        const menuLi = document.querySelector('.clothes');
+        const categoryOpen = document.querySelector('.category__open');
 
-        menuToggle.addEventListener('click', function() {
+        menuToggle.addEventListener('click', () => {
             menuOpen.style.display = 'flex';
+            backgroundOp.classList.remove('hidden');
+            backgroundOp.style.cssText = `
+                z-index: 900;
+            `;
         });
 
-        menuLi[0].addEventListener('click', function() {
-            categoryOpen.style.display = 'flex';
+        menuLi.addEventListener('click', () => {
+            categoryOpen.classList.remove('hidden');
+            categoryOpen.style.cssText = `
+                z-index: 999;
+            `;
+        });
+    </script>
+    <script>
+        const searchIcon = document.querySelector('.links__search');
+        const closeIcon = document.querySelector('.links__close');
+        const popHeader = document.querySelector('.pop__header');
+        const logo = document.querySelector('.header__logos');
+        const headerPopup = document.querySelector('.header__pop-up');
+        const header = document.querySelector('#header');
+        const headerDesktop = document.querySelector('.header__desktop');
+        const headerForm = document.querySelector('.header__form');
+        const imgLinks = document.querySelectorAll('.header__links a img');
+        const headerLinks = document.querySelector('.header__links');
+        const backgroundOp = document.querySelector('.opacity__background');
+        const resultPop = document.querySelector('.pop__result');
+        const mainPop = document.querySelector('.pop__main');
+        const btnMainPop = document.querySelector('.pop__main button');
+        const inputPop = document.querySelector('.pop__header input');
+        const imgUrl = [
+            '',
+            './assets/images/pop-up/close.svg',
+            './assets/images/pop-up/account.svg',
+            './assets/images/pop-up/like.svg',
+            './assets/images/pop-up/cart.svg'
+        ];
+        let currentImgIndex = 0;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            headerPopup.classList.add('hidden');
+            closeIcon.classList.add('hidden');
+            popHeader.classList.add('hidden');
+            backgroundOp.classList.add('hidden');
+            btnMainPop.classList.add('hidden');
+            categoryOpen.classList.add('hidden');
+        });
+
+        searchIcon.addEventListener('click', () => {
+            searchIcon.style.display = 'none';
+            closeIcon.classList.remove('hidden');
+            popHeader.classList.remove('hidden');
+            headerPopup.classList.remove('hidden');
+            logo.classList.add('hidden');
+            popHeader.style.cssText = `
+                grid-column: 1 / 5;
+            `;
+            headerLinks.style.cssText = `
+                grid-column: 5 / 6;
+                justify-self: end;
+            `;
+            header.style.cssText = `
+                background-color: white;
+                padding: 0;
+            `;
+            headerDesktop.style.cssText = `
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                border-bottom: 1px solid #EAEAEA;
+                padding: 11px 40px;
+                background-color: white;
+            `;
+            headerForm.style.cssText = `
+                display: flex;
+                align-items: center;
+            `;
+            imgLinks.forEach((img, index) => () => {
+                let newSrc;
+                switch (index) {
+                case 0:
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    newSrc = './assets/images/pop-up/account.svg';
+                    break;
+                }
+            });
+            currentImgIndex = (currentImgIndex + 1) % imgUrl.length;
+            imgLinks.forEach((img, index) => {
+                img.src = imgUrl[index];
+            });
+            backgroundOp.classList.remove('hidden');
+            backgroundOp.style.cssText = `
+                z-index: 900;
+            `;
+        });
+
+        inputPop.addEventListener('click', () => {
+            resultPop.classList.add('hidden');
+            btnMainPop.classList.remove('hidden');
+            headerPopup.style.cssText = `
+                padding-bottom: 30px;
+            `;
         });
     </script>
 </html>
