@@ -146,6 +146,15 @@ a {
     display: none !important;
 }
 
+.flex {
+    display: flex !important;
+}
+
+.header__background {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 40px;
+}
+
 body {
     position: relative;
 }
@@ -222,14 +231,12 @@ header .header__desktop {
 
 .header__open {
     height: 1024px;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 998;
-}
-
-.header__open .menu__open {
-    display: none;
+    overflow-y: hidden;
 }
 
 .menu__open {
@@ -239,7 +246,6 @@ header .header__desktop {
 	background-image: url('../images/menu-open/menu_background.svg');
 	background-position: right;
 	background-repeat: no-repeat;
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }

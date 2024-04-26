@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
-    <body  class="opacity__background">
+    <body>
         <header id="header">
             <section class="header__desktop">
                 <div class="header__logos">
                     <a id="ham_menu">
-                        <img src="./assets/images/header/ham_menu.svg" alt="">
+                        <img class="logos__close" src="./assets/images/header/ham_menu.svg" alt="">
                     </a>
                     <a>
                         <img src="./assets/images/header/aristino_logo.svg" alt="">
@@ -25,7 +25,7 @@
                     </form>
                 </div>
                 <div class="header__links">
-                    <a class="links__close" href="" title="">
+                    <a class="links__close">
                         <img src="./assets/images/pop-up/close.svg" alt="">
                     </a>
                     <div class="links__icon">
@@ -51,13 +51,13 @@
                 </div>
                 <div class="header__pop-up">
                     <div class="pop__result">
-                        <a href="" title="">
+                        <a>
                             <span>áo sơ mi</span>
                         </a>
-                        <a href="" title="">
+                        <a>
                             <span>áo polo</span>
                         </a>
-                        <a href="" title="">
+                        <a>
                             <span>bộ sưu tập 2023</span>
                         </a>
                     </div>
@@ -157,23 +157,21 @@
             <section class="header__open">
                 <div class="menu__open">
                     <div class="menu__collection">
-                        <a href="">
-                            <img src="./assets/images/menu-open/close_tag.svg" alt="">
-                        </a>
+                        <a href=""></a>
                         <h4>bộ sưu tập 2023<strong>mới</strong></h4>
                         <ul>
-                            <li class="clothes">áo</li>
-                            <li>quần</li>
-                            <li>đồ lót</li>
-                            <li>đồ bộ</li>
-                            <li>aristino golf</li>
-                            <li>phụ kiện</li>
+                            <li class="clothes"><a>áo</a></li>
+                            <li><a>quần</a></li>
+                            <li><a>đồ lót</a></li>
+                            <li><a>đồ bộ</a></li>
+                            <li><a>aristino golf</a></li>
+                            <li><a>phụ kiện</a></li>
                         </ul>
                         <ul>
-                            <li><a href="" title="">thương hiệu</a></li>
-                            <li><a href="" title="">cửa hàng</a></li>
-                            <li><a href="" title="">3d shopping</a></li>
-                            <li><a href="" title="">outlet store</a></li>
+                            <li><a>thương hiệu</a></li>
+                            <li><a>cửa hàng</a></li>
+                            <li><a>3d shopping</a></li>
+                            <li><a>outlet store</a></li>
                         </ul>
                     </div>
                     <div class="menu__footer">
@@ -183,8 +181,8 @@
                             <div class="highline"></div>
                         </div>
                         <div class="footer__bottom">
-                            <a href="" title="">Đơn hàng</a>
-                            <a href="" title="">Tài khoản</a>
+                            <a>Đơn hàng</a>
+                            <a>Tài khoản</a>
                         </div>
                     </div>
                 </div>
@@ -202,48 +200,49 @@
                         <li>
                             <img src="./assets/images/menu-open/pro1.svg" alt="">
                             <div class="product__title">
-                                <a href="" title="">Áo sơ mi nam dài tay Aristino ALS01103</a>
+                                <a>Áo sơ mi nam dài tay Aristino ALS01103</a>
                                 <p>1.999.999đ</p>
                             </div>
                         </li>
                         <li>
                             <img src="./assets/images/menu-open/pro2.svg" alt="">
                             <div class="product__title">
-                                <a href="" title="">Áo sơ mi nam dài tay Aristino ALS01103</a>
+                                <a>Áo sơ mi nam dài tay Aristino ALS01103</a>
                                 <p>1.999.999đ</p>
                             </div>
                         </li>
                         <li>
                             <img src="./assets/images/menu-open/pro3.svg" alt="">
                             <div class="product__title">
-                                <a href="" title="">Áo sơ mi nam dài tay Aristino ALS01103</a>
+                                <a>Áo sơ mi nam dài tay Aristino ALS01103</a>
                                 <p>1.999.999đ</p>
                             </div>
                         </li>
                         <li>
                             <img src="./assets/images/menu-open/pro1.svg" alt="">
                             <div class="product__title">
-                                <a href="" title="">Áo sơ mi nam dài tay Aristino ALS01103</a>
+                                <a>Áo sơ mi nam dài tay Aristino ALS01103</a>
                                 <p>1.999.999đ</p>
                             </div>
                         </li>
                         <li>
                             <img src="./assets/images/menu-open/pro2.svg" alt="">
                             <div class="product__title">
-                                <a href="" title="">Áo sơ mi nam dài tay Aristino ALS01103</a>
+                                <a>Áo sơ mi nam dài tay Aristino ALS01103</a>
                                 <p>1.999.999đ</p>
                             </div>
                         </li>
                         <li>
                             <img src="./assets/images/menu-open/pro3.svg" alt="">
                             <div class="product__title">
-                                <a href="" title="">Áo sơ mi nam dài tay Aristino ALS01103</a>
+                                <a>Áo sơ mi nam dài tay Aristino ALS01103</a>
                                 <p>1.999.999đ</p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
+            <div class="opacity__background"></div>
         </header>
         <main>
             <section class="banner">
@@ -594,36 +593,6 @@
         });
     </script>
     <script>
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            const bgOp = document.querySelector('.opacity__background');
-
-            if (window.scrollY > 800) {
-                header.classList.add('hide');
-                bgOp.classList.add('hidden');
-            } else {
-                header.classList.remove('hide');
-            }
-        });
-    </script>
-    <script>
-        const menuToggle = document.getElementById('ham_menu');
-        const menuOpen = document.querySelector('.header__open .menu__open');
-        const menuLi = document.querySelector('.clothes');
-        const categoryOpen = document.querySelector('.category__open');
-
-        menuToggle.addEventListener('click', () => {
-            menuOpen.style.display = 'flex';
-        });
-
-        menuLi.addEventListener('click', () => {
-            categoryOpen.classList.remove('hidden');
-            categoryOpen.style.cssText = `
-                z-index: 999;
-            `;
-        });
-    </script>
-    <script>
         const searchIcon = document.querySelector('.links__search');
         const closeIcon = document.querySelector('.links__close');
         const popHeader = document.querySelector('.pop__header');
@@ -642,6 +611,13 @@
         const basketHeader = document.querySelector('.links__header__basket');
         const cartIcon = document.querySelector('.links__cart');
         const linksIcon = document.querySelector('.links__icon');
+        const menuToggle = document.getElementById('ham_menu');
+        const menuOpen = document.querySelector('.header__open .menu__open');
+        const menuLi = document.querySelector('.clothes');
+        const categoryOpen = document.querySelector('.category__open');
+        const headerOpen = document.querySelector('.header__open');
+        const closeLogo = document.querySelector('.logos__close');
+
         const imgUrl = [
             './assets/images/pop-up/close.svg',
             '',
@@ -650,6 +626,17 @@
             './assets/images/pop-up/cart.svg'
         ];
         let currentImgIndex = 0;
+        let menuOpenClick = false;
+
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+
+            if (window.scrollY >= 1) {
+                header.classList.add('header__background');
+            } else {
+                header.classList.remove('header__background');
+            }
+        });
 
         document.addEventListener('DOMContentLoaded', () => {
             headerPopup.classList.add('hidden');
@@ -658,83 +645,117 @@
             btnMainPop.classList.add('hidden');
             categoryOpen.classList.add('hidden');
             basketHeader.classList.add('hidden');
-            backgroundOp.classList.remove('opacity__background');
+            menuOpen.classList.add('hidden');
+            backgroundOp.classList.add('hidden');
         });
 
-        searchIcon.addEventListener('click', () => {
-            searchIcon.style.display = 'none';
-            closeIcon.classList.remove('hidden');
-            popHeader.classList.remove('hidden');
-            headerPopup.classList.remove('hidden');
-            backgroundOp.classList.add('opacity__background');
-            logo.classList.add('hidden');
-            closeIcon.style.cssText = `
-                display: flex;
-            `;
-            popHeader.style.cssText = `
-                grid-column: 1 / 5;
-            `;
-            headerLinks.style.cssText = `
-                grid-column: 5 / 6;
-                justify-self: end;
-            `;
-            header.style.cssText = `
-                background-color: white;
-                padding: 0;
-            `;
-            headerDesktop.style.cssText = `
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                border-bottom: 1px solid #EAEAEA;
-                padding: 11px 40px;
-                background-color: white;
-            `;
-            headerForm.style.cssText = `
-                display: flex;
-                align-items: center;
-            `;
-            imgLinks.forEach((img, index) => () => {
-                let newSrc;
-                switch (index) {
-                case 0:
-                    break;
-                case 1:
-                    break;
-                case 2:
-                    newSrc = './assets/images/pop-up/account.svg';
-                    break;
+        menuToggle.addEventListener('click', () => {
+            backgroundOp.classList.toggle('hidden');
+            menuOpen.classList.toggle('hidden');
+            menuOpen.style.display = 'flex';
+            menuOpenClick = !menuOpenClick;
+            console.log(menuOpenClick);
+            if (menuOpenClick) {
+                closeLogo.src = './assets/images/menu-open/close_tag.svg';
+            } else {
+                closeLogo.src = './assets/images/header/ham_menu.svg';
+            }
+        });
+
+        headerOpen.addEventListener('click', (e) => {
+            if (menuOpenClick && !menuOpen.contains(e.target)) {
+                menuOpen.classList.add('hidden');
+                menuOpenClick = false;
+                backgroundOp.classList.add('hidden');
+                if (menuOpenClick) {
+                    closeLogo.src = './assets/images/menu-open/close_tag.svg';
+                } else {
+                    closeLogo.src = './assets/images/header/ham_menu.svg';
                 }
-            });
-            currentImgIndex = (currentImgIndex + 1) % imgUrl.length;
-            imgLinks.forEach((img, index) => {
-                img.src = imgUrl[index];
-            });
+            }
         });
 
-        inputPop.addEventListener('click', () => {
-            resultPop.classList.add('hidden');
-            btnMainPop.classList.remove('hidden');
-            headerPopup.style.cssText = `
-                padding-bottom: 30px;
-            `;
+        menuLi.addEventListener('click', () => {
+            if (!menuOpen.classList.contains('hidden')) {
+                console.log('a');
+                categoryOpen.classList.remove('hidden');
+            }
         });
 
-        cartIcon.addEventListener('click', () => {
-            basketHeader.classList.remove('hidden');
-            closeIcon.classList.remove('hidden');
-            linksIcon.classList.add('hidden');
-            header.style.classList = `
+        // searchIcon.addEventListener('click', () => {
+        //     searchIcon.style.display = 'none';
+        //     closeIcon.classList.remove('hidden');
+        //     popHeader.classList.remove('hidden');
+        //     headerPopup.classList.remove('hidden');
+        //     // backgroundOp.classList.add('opacity__background');
+        //     logo.classList.add('hidden');
+        //     closeIcon.style.cssText = `
+        //         display: flex;
+        //     `;
+        //     popHeader.style.cssText = `
+        //         grid-column: 1 / 5;
+        //     `;
+        //     headerLinks.style.cssText = `
+        //         grid-column: 5 / 6;
+        //         justify-self: end;
+        //     `;
+        //     header.style.cssText = `
+        //         background-color: white;
+        //         padding: 0;
+        //     `;
+        //     headerDesktop.style.cssText = `
+        //         display: grid;
+        //         grid-template-columns: repeat(5, 1fr);
+        //         border-bottom: 1px solid #EAEAEA;
+        //         padding: 11px 40px;
+        //         background-color: white;
+        //     `;
+        //     headerForm.style.cssText = `
+        //         display: flex;
+        //         align-items: center;
+        //     `;
+        //     imgLinks.forEach((img, index) => () => {
+        //         let newSrc;
+        //         switch (index) {
+        //         case 0:
+        //             break;
+        //         case 1:
+        //             break;
+        //         case 2:
+        //             newSrc = './assets/images/pop-up/account.svg';
+        //             break;
+        //         }
+        //     });
+        //     currentImgIndex = (currentImgIndex + 1) % imgUrl.length;
+        //     imgLinks.forEach((img, index) => {
+        //         img.src = imgUrl[index];
+        //     });
+        // });
 
-            `;
-            headerDesktop.style.cssText = `
-                padding: 0 0 0 30px;
-            `;
-            headerLinks.style.cssText = `
-                flex-direction: row-reverse;
-                justify-content: space-between;
-                width: 430px;
-                background-color: white;
-            `;
-        });
+        // inputPop.addEventListener('click', () => {
+        //     resultPop.classList.add('hidden');
+        //     btnMainPop.classList.remove('hidden');
+        //     headerPopup.style.cssText = `
+        //         padding-bottom: 30px;
+        //     `;
+        // });
+
+        // cartIcon.addEventListener('click', () => {
+        //     basketHeader.classList.remove('hidden');
+        //     closeIcon.classList.remove('hidden');
+        //     linksIcon.classList.add('hidden');
+        //     header.style.classList = `
+
+        //     `;
+        //     headerDesktop.style.cssText = `
+        //         padding: 0 0 0 30px;
+        //     `;
+        //     headerLinks.style.cssText = `
+        //         flex-direction: row-reverse;
+        //         justify-content: space-between;
+        //         width: 430px;
+        //         background-color: white;
+        //     `;
+        // });
     </script>
 </html>
