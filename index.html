@@ -156,11 +156,12 @@
             </section>
             <section class="header__open">
                 <div class="menu__open">
+                    <div class="invisible"></div>
                     <div class="menu__collection">
                         <a href=""></a>
                         <h4>bộ sưu tập 2023<strong>mới</strong></h4>
                         <ul>
-                            <li class="clothes"><a>áo</a></li>
+                            <li id="clothes"><a>áo</a></li>
                             <li><a>quần</a></li>
                             <li><a>đồ lót</a></li>
                             <li><a>đồ bộ</a></li>
@@ -242,9 +243,100 @@
                     </ul>
                 </div>
             </section>
+            <section class="header__cart">
+                <ul class="cart__result">
+                    <li>
+                        <img class="result__img" src="./assets/images/basket/pro/pro1.svg" alt="">
+                        <p class="result__title small-p">Áo sơ mi nam dài tay Aristino ALS01103</p>
+                        <div class="result__classify">
+                            <div class="classsify__color"></div>
+                            <p class="small-p">Ghi</p>
+                        </div>
+                        <form>
+                            <div class="form__title">
+                                <p class="small-p title">Size</p>
+                                <p class="small-p form__size"> XL</p>
+                            </div>
+                            <div class="form__quantity">
+                                <label class="small-p" for="size">Số lượng</label>
+                                <select name="size" id="size">
+                                    <option class="small-p" value="">1</option>
+                                </select>
+                            </div>
+                        </form>
+                        <p class="small-p result__price">1.999.999đ</p>
+                        <div class="result__func">
+                            <img src="./assets/images/basket/func/edit.svg" alt="">
+                            <img src="./assets/images/basket/func/love.svg" alt="">
+                            <img src="./assets/images/basket/func/del.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <img class="result__img" src="./assets/images/basket/pro/pro2.svg" alt="">
+                        <p class="result__title small-p">Áo sơ mi nam dài tay Aristino ALS01103</p>
+                        <div class="result__classify">
+                            <div class="classsify__color"></div>
+                            <p class="small-p">Ghi</p>
+                        </div>
+                        <form>
+                            <div class="form__title">
+                                <p class="small-p title">Size</p>
+                                <p class="small-p form__size"> XL</p>
+                            </div>
+                            <div class="form__quantity">
+                                <label class="small-p" for="size">Số lượng</label>
+                                <select name="size" id="size">
+                                    <option class="small-p" value="">1</option>
+                                </select>
+                            </div>
+                        </form>
+                        <p class="small-p result__price">1.999.999đ</p>
+                        <div class="result__func">
+                            <img src="./assets/images/basket/func/edit.svg" alt="">
+                            <img src="./assets/images/basket/func/love.svg" alt="">
+                            <img src="./assets/images/basket/func/del.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <img class="result__img" src="./assets/images/basket/pro/pro3.svg" alt="">
+                        <p class="result__title small-p">Áo sơ mi nam dài tay Aristino ALS01103</p>
+                        <div class="result__classify">
+                            <div class="classsify__color"></div>
+                            <p class="small-p">Ghi</p>
+                        </div>
+                        <form>
+                            <div class="form__title">
+                                <p class="small-p title">Size</p>
+                                <p class="small-p form__size"> XL</p>
+                            </div>
+                            <div class="form__quantity">
+                                <label class="small-p" for="size">Số lượng</label>
+                                <select name="size" id="size">
+                                    <option class="small-p" value="">1</option>
+                                </select>
+                            </div>
+                        </form>
+                        <p class="small-p result__price">1.999.999đ</p>
+                        <div class="result__func">
+                            <img src="./assets/images/basket/func/edit.svg" alt="">
+                            <img src="./assets/images/basket/func/love.svg" alt="">
+                            <img src="./assets/images/basket/func/del.svg" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="cart__footer">
+                    <div class="footer__total">
+                        <p class="footer__title">Tạm tính</p>
+                        <p><strong>5.999.999đ</strong></p>
+                    </div>
+                    <button class="button-2">
+                        <span>Thanh toán ngay</span>
+                    </button>
+                </div>
+            </section>
             <div class="opacity__background"></div>
         </header>
-        <main>
+        <main id="main">
             <section class="banner">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -373,7 +465,6 @@
                                 <label for="size">Chọn size</label>
                                 <select name="size" id="size">
                                     <option value="">1</option>
-                                    option
                                 </select>
                             </div>
                             <button class="button-1" type="">
@@ -392,7 +483,6 @@
                                 <label for="size">Chọn size</label>
                                 <select name="size" id="size">
                                     <option value="">1</option>
-                                    option
                                 </select>
                             </div>
                             <button class="button-1" type="">
@@ -411,7 +501,6 @@
                                 <label for="size">Chọn size</label>
                                 <select name="size" id="size">
                                     <option value="">1</option>
-                                    option
                                 </select>
                             </div>
                             <button class="button-1" type="">
@@ -430,7 +519,6 @@
                                 <label for="size">Chọn size</label>
                                 <select name="size" id="size">
                                     <option value="">1</option>
-                                    option
                                 </select>
                             </div>
                             <button class="button-1" type="">
@@ -593,30 +681,41 @@
         });
     </script>
     <script>
-        const searchIcon = document.querySelector('.links__search');
-        const closeIcon = document.querySelector('.links__close');
-        const popHeader = document.querySelector('.pop__header');
-        const logo = document.querySelector('.header__logos');
-        const headerPopup = document.querySelector('.header__pop-up');
         const header = document.querySelector('#header');
         const headerDesktop = document.querySelector('.header__desktop');
-        const headerForm = document.querySelector('.header__form');
-        const imgLinks = document.querySelectorAll('.header__links a img');
-        const headerLinks = document.querySelector('.header__links');
         const backgroundOp = document.querySelector('.opacity__background');
+
+        const searchIcon = document.querySelector('.links__search');
+        const closeIcon = document.querySelector('.links__close');
+
+        const logo = document.querySelector('.header__logos');
+        const hamMenu = document.querySelector('#ham_menu');
+
+        const popHeader = document.querySelector('.pop__header');
+        const headerPopup = document.querySelector('.header__pop-up');
+        const headerForm = document.querySelector('.header__form');
         const resultPop = document.querySelector('.pop__result');
         const mainPop = document.querySelector('.pop__main');
         const btnMainPop = document.querySelector('.pop__main button');
         const inputPop = document.querySelector('.pop__header input');
+
+        const headerLinks = document.querySelector('.header__links');
+        const imgLinks = document.querySelectorAll('.header__links a img');
         const basketHeader = document.querySelector('.links__header__basket');
         const cartIcon = document.querySelector('.links__cart');
         const linksIcon = document.querySelector('.links__icon');
-        const menuToggle = document.getElementById('ham_menu');
-        const menuOpen = document.querySelector('.header__open .menu__open');
-        const menuLi = document.querySelector('.clothes');
-        const categoryOpen = document.querySelector('.category__open');
+
         const headerOpen = document.querySelector('.header__open');
+        const menuOpen = document.querySelector('.header__open .menu__open');
+        const clothes = document.querySelector('#clothes');
+        const invisible = document.querySelector('.invisible');
+
+        const categoryOpen = document.querySelector('.category__open');
         const closeLogo = document.querySelector('.logos__close');
+
+        const headerCart = document.querySelector('.header__cart');
+
+        const main = document.querySelector('#main');
 
         const imgUrl = [
             './assets/images/pop-up/close.svg',
@@ -625,8 +724,35 @@
             './assets/images/pop-up/like.svg',
             './assets/images/pop-up/cart.svg'
         ];
+
+        const imgUrlBack = [
+            '',
+            './assets/images/header/search.svg',
+            './assets/images/header/account.svg',
+            './assets/images/header/like.svg',
+            './assets/images/header/cart.svg'
+        ];
+
         let currentImgIndex = 0;
         let menuOpenClick = false;
+
+        function handleBgOp() {
+            backgroundOp.classList.toggle('hidden');
+            if (!backgroundOp.classList.contains('hidden')) {
+                document.documentElement.style.overflowY = "hidden";
+            } else {
+                document.documentElement.style.overflowY = "scroll";
+            }
+        }
+
+        const initialStylesA = {
+            closeIconCSS: closeIcon.style.cssText,
+            popHeaderCSS: popHeader.style.cssText,
+            headerLinksCSS: headerLinks.style.cssText,
+            headerCSS: header.style.cssText,
+            headerDesktopCSS: headerDesktop.style.cssText,
+            headerFormCSS: headerForm.style.cssText
+        };
 
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
@@ -641,29 +767,79 @@
         document.addEventListener('DOMContentLoaded', () => {
             headerPopup.classList.add('hidden');
             closeIcon.classList.add('hidden');
+            backgroundOp.classList.add('hidden');
+
             popHeader.classList.add('hidden');
             btnMainPop.classList.add('hidden');
-            categoryOpen.classList.add('hidden');
-            basketHeader.classList.add('hidden');
+
             menuOpen.classList.add('hidden');
-            backgroundOp.classList.add('hidden');
+            categoryOpen.classList.add('hidden');
+            invisible.classList.add('hidden');
+
+            basketHeader.classList.add('hidden');
+
+            headerCart.classList.add('hidden');
         });
 
-        menuToggle.addEventListener('click', () => {
-            backgroundOp.classList.toggle('hidden');
+        hamMenu.addEventListener('click', () => {
+            handleBgOp();
+
+            if (!categoryOpen.classList.contains('hidden')) {
+                categoryOpen.classList.add('hidden');
+                headerOpen.style.width = 'unset';
+            }
+
+            headerDesktop.style.cssText = `
+                z-index: unset;
+            `;
+
+            logo.style.cssText = `
+                z-index: 999;
+            `;
+
+            backgroundOp.style.cssText = `
+                z-index: 900;
+            `;
+
             menuOpen.classList.toggle('hidden');
-            menuOpen.style.display = 'flex';
             menuOpenClick = !menuOpenClick;
             console.log(menuOpenClick);
+
             if (menuOpenClick) {
                 closeLogo.src = './assets/images/menu-open/close_tag.svg';
             } else {
                 closeLogo.src = './assets/images/header/ham_menu.svg';
             }
+
+            linksIcon.style.cssText = `
+                z-index: 500;
+            `;
         });
 
-        headerOpen.addEventListener('click', (e) => {
+        clothes.addEventListener('click', () => {
+            categoryOpen.classList.toggle('hidden');
+            if (!categoryOpen.classList.contains('hidden')) {
+                headerOpen.style.cssText = `
+                    width: 100%;
+                `;
+            }
+            !menuOpenClick;
+            console.log('menu: ' + menuOpenClick);
+
+            invisible.classList.toggle('hidden');
+        });
+
+        invisible.addEventListener('click', (e) => {
+            categoryOpen.classList.add('hidden');
+            invisible.classList.add('hidden');
+            headerOpen.style.cssText = `
+                width: unset;
+            `;
+        });
+
+        backgroundOp.addEventListener('click', (e) => {
             if (menuOpenClick && !menuOpen.contains(e.target)) {
+                handleBgOp();
                 menuOpen.classList.add('hidden');
                 menuOpenClick = false;
                 backgroundOp.classList.add('hidden');
@@ -675,87 +851,104 @@
             }
         });
 
-        menuLi.addEventListener('click', () => {
-            if (!menuOpen.classList.contains('hidden')) {
-                console.log('a');
-                categoryOpen.classList.remove('hidden');
-            }
+        searchIcon.addEventListener('click', () => {
+            handleBgOp();
+            searchIcon.style.display = 'none';
+            closeIcon.classList.remove('hidden');
+            popHeader.classList.remove('hidden');
+            headerPopup.classList.remove('hidden');
+            logo.classList.add('hidden');
+            closeIcon.style.cssText = `
+                display: flex;
+            `;
+            popHeader.style.cssText = `
+                grid-column: 1 / 5;
+            `;
+            headerLinks.style.cssText = `
+                grid-column: 5 / 6;
+                justify-self: end;
+            `;
+            header.style.cssText = `
+                background-color: white;
+                padding: 0;
+            `;
+            headerDesktop.style.cssText = `
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                border-bottom: 1px solid #EAEAEA;
+                padding: 11px 40px;
+                background-color: white;
+            `;
+            headerForm.style.cssText = `
+                display: flex;
+                align-items: center;
+            `;
+            currentImgIndex = (currentImgIndex + 1) % imgUrl.length;
+            imgLinks.forEach((img, index) => {
+                img.src = imgUrl[index];
+            });
         });
 
-        // searchIcon.addEventListener('click', () => {
-        //     searchIcon.style.display = 'none';
-        //     closeIcon.classList.remove('hidden');
-        //     popHeader.classList.remove('hidden');
-        //     headerPopup.classList.remove('hidden');
-        //     // backgroundOp.classList.add('opacity__background');
-        //     logo.classList.add('hidden');
-        //     closeIcon.style.cssText = `
-        //         display: flex;
-        //     `;
-        //     popHeader.style.cssText = `
-        //         grid-column: 1 / 5;
-        //     `;
-        //     headerLinks.style.cssText = `
-        //         grid-column: 5 / 6;
-        //         justify-self: end;
-        //     `;
-        //     header.style.cssText = `
-        //         background-color: white;
-        //         padding: 0;
-        //     `;
-        //     headerDesktop.style.cssText = `
-        //         display: grid;
-        //         grid-template-columns: repeat(5, 1fr);
-        //         border-bottom: 1px solid #EAEAEA;
-        //         padding: 11px 40px;
-        //         background-color: white;
-        //     `;
-        //     headerForm.style.cssText = `
-        //         display: flex;
-        //         align-items: center;
-        //     `;
-        //     imgLinks.forEach((img, index) => () => {
-        //         let newSrc;
-        //         switch (index) {
-        //         case 0:
-        //             break;
-        //         case 1:
-        //             break;
-        //         case 2:
-        //             newSrc = './assets/images/pop-up/account.svg';
-        //             break;
-        //         }
-        //     });
-        //     currentImgIndex = (currentImgIndex + 1) % imgUrl.length;
-        //     imgLinks.forEach((img, index) => {
-        //         img.src = imgUrl[index];
-        //     });
-        // });
+        closeIcon.addEventListener('click', () => {
+            searchIcon.style.display = 'block';
+            closeIcon.classList.add('hidden');
+            popHeader.classList.add('hidden');
+            headerPopup.classList.add('hidden');
+            logo.classList.remove('hidden');
+            closeIcon.style.cssText = initialStylesA.closeIconCSS;
+            popHeader.style.cssText = initialStylesA.popHeaderCSS;
+            headerLinks.style.cssText = initialStylesA.headerLinksCSS;
+            header.style.cssText = initialStylesA.headerCSS;
+            headerDesktop.style.cssText = initialStylesA.headerDesktopCSS;
+            headerForm.style.cssText = initialStylesA.headerFormCSS;
+            backgroundOp.classList.add('hidden');
+            currentImgIndex = (currentImgIndex + 1) % imgUrlBack.length;
+            imgLinks.forEach((img, index) => {
+                img.src = imgUrlBack[index];
+            });
 
-        // inputPop.addEventListener('click', () => {
-        //     resultPop.classList.add('hidden');
-        //     btnMainPop.classList.remove('hidden');
-        //     headerPopup.style.cssText = `
-        //         padding-bottom: 30px;
-        //     `;
-        // });
+            if (!btnMainPop.classList.contains('hidden')) {
+                btnMainPop.classList.add('hidden');
+                resultPop.classList.remove('hidden');
+                headerPopup.style.paddingBottom = 'unset';
+            }
 
-        // cartIcon.addEventListener('click', () => {
-        //     basketHeader.classList.remove('hidden');
-        //     closeIcon.classList.remove('hidden');
-        //     linksIcon.classList.add('hidden');
-        //     header.style.classList = `
+            headerCart.classList.add('hidden');
+            basketHeader.classList.add('hidden');
+            linksIcon.classList.remove('hidden');
+        });
 
-        //     `;
-        //     headerDesktop.style.cssText = `
-        //         padding: 0 0 0 30px;
-        //     `;
-        //     headerLinks.style.cssText = `
-        //         flex-direction: row-reverse;
-        //         justify-content: space-between;
-        //         width: 430px;
-        //         background-color: white;
-        //     `;
-        // });
+        inputPop.addEventListener('click', () => {
+            resultPop.classList.add('hidden');
+            btnMainPop.classList.remove('hidden');
+            headerPopup.style.cssText = `
+                padding-bottom: 30px;
+            `;
+        });
+
+        cartIcon.addEventListener('click', () => {
+            basketHeader.classList.remove('hidden');
+            closeIcon.classList.remove('hidden');
+            linksIcon.classList.add('hidden');
+
+            headerDesktop.style.cssText = `
+                padding: 0 0 0 30px;
+                z-index: unset;
+            `;
+            headerLinks.style.cssText = `
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                width: 430px;
+                background-color: white;
+                padding: 0 30px;
+                z-index: 999;
+            `;
+
+            headerCart.classList.remove('hidden');
+            headerCart.style.cssText = `
+                z-index: 998;
+            `;
+            handleBgOp();
+        });
     </script>
 </html>
