@@ -733,6 +733,10 @@
             './assets/images/header/cart.svg'
         ];
 
+        const imgUrlClose = [
+            './assets/images/pop-up/close.svg'
+        ];
+
         let currentImgIndex = 0;
         let menuOpenClick = false;
 
@@ -887,6 +891,7 @@
             imgLinks.forEach((img, index) => {
                 img.src = imgUrl[index];
             });
+            handleBgOp();
         });
 
         closeIcon.addEventListener('click', () => {
@@ -927,6 +932,7 @@
         });
 
         cartIcon.addEventListener('click', () => {
+            handleBgOp();
             basketHeader.classList.remove('hidden');
             closeIcon.classList.remove('hidden');
             linksIcon.classList.add('hidden');
